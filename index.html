@@ -10,7 +10,31 @@
   <body>
     <div class="hearts"></div>
     <main class="app">
-      <section class="screen active" id="welcome">
+      <!-- Password Screen -->
+      <section class="screen active" id="password">
+        <div class="emoji">🔐💗</div>
+
+        <p class="eyebrow">A LITTLE SECRET FOR YOU</p>
+
+        <h1>Hey Rabia! 🥰</h1>
+
+        <p class="sub">Enter the secret password to open your surprise 💌</p>
+
+        <form id="passwordForm">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter password..."
+            autocomplete="off"
+            required
+          />
+
+          <button class="primary" type="submit">Unlock My Surprise ❤️</button>
+        </form>
+
+        <p id="passwordError" class="hint"></p>
+      </section>
+      <section class="screen" id="welcome">
         <div class="emoji">💗</div>
         <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
         <h1>Hey, Rabia, Shehzaadi! 🥹</h1>
@@ -288,98 +312,108 @@
           I hope this little surprise made you smile. Take care, keep smiling,
           and remember you're special. 🌷
         </p>
-        <p>
-          Agar is website ko reject kr do to neechy wala parhana otherwise na
-          parhana!
-        </p>
-        <p>
-          Ma umeed krta hun k aap ko yeah website achi lagi ho gi or mujhy yeah
-          bhi umeed ha k kabhi kisi na kisi larki ko aaj sa pehly aysy purpose
-          nahi kya ho ga. yeah website ma na apni mehnat sa especial aap k liya
-          banai ha agar aap issay accept krna chaho to mujhay dukaan pr aa k bas
-          itna bata dyna k accept. keu k ma kaafi time sa aap sa baat krna
-          chahta tha or mera aap ki wajah sa kaafi study period loss hua ha ma
-          roz kehta tha k aaj baat kru ga lakin yeah hi sochta rehta tha k kasy
-          kru or ab mary exam bhi nazdeek aa gay han. agar accept kya to woh
-          baat bhi bata du ga.
-        </p>
-        <p>
-          or 1 advice ha yeah jo larka ha Ali Hussain jo aap ko tang krta tha
-          mujhy pehly bhi maloom tha ma na aap sa bola bhi tha k baat sun lo
-          5mint lakin aap nhi maani is sa ab jitna ho saka door raho keu k is na
-          aap k baary ma bohat gandi baat ki ha or mujhy us baat pr yaqqeen bhi
-          nhi ha keu k aap aysa nhi kr sakti.
-        </p>
-        <p>
-          OR agar reject kro to aa kr bas 1 thappar laga dyna ta k ma kabhi aap
-          sa baat na kru aisi or agar reject kro to ma aap ko mazeed nahi tang
-          kru ga bas 1 sorry wala page likha hua ha woh da dun ga. or agar
-          reject kr dya to mujhy nhi umeed k is ko parhany k baad dukaan pr aao
-          gi agar i bhi to ma aap sa just as a shopkeeper behave kru ga. bas
-          bata dyna. agar accept kr lo to ma samjhun ga mera aap k liya 3 raatyn
-          jaagna baykaar nahi gya ab yeah aap ki marzi ha accept ya reject. 1500
-          lines of code just for you.
-        </p>
-        <p>
-          orr aap ko kisi bhi cheez ki zaroorat ho bas mujhy bata dyna chai woh
-          cheez kitni hi choti ya kitni hi bari keu na ho (intentialy or
-          finencialy). koi larka tang kra tab bhi bata dyna. aap k liya mari
-          jaan bhi haazir ha. just for you.
-        </p>
-        <p>
-          Last ma 1 advice ha! jis tarah aap subah school jaaty huy dopata or
-          mask lati ho usi tarah waapsi pr bhi lya kro or baar baar peechy na
-          dykha kro or ma yeah sab apna liya nhi keh rha balky aap ki izzat or
-          aap k papa or mama ki izzat ka hi thora sa khayaal kr lo. aap 1
-          izzatdaar ghar ki bati ho thora sa khayaal kr lo. Or ma koshish kru ga
-          k aap ki yeah pics delete kr du. But I think it,s not possible ma raat
-          ko sona sa pehla 1 dafa dykhta hun phir aap k liya dua kr k sota hun
-          or jab aap dukaan pr aati ho to mari dharkan bohat tezz ho jaati ha or
-          koi baat yaad nhi rhti jab waapis jaati ho to ma "aaytal kursi" parh
-          kr dill ma aap ko Allah k hawaly krta hun. Agar ni yaqqeen to kasam la
-          lo mujh sa. wasy ma kasam uthata nhi.
-        </p>
-        <p>
-          1 or baat jo aap k mind ma ho gi k sabzi waaly uncle ko maloom ha k
-          ham baatyn krty ha to yeah jaan lo k unhen sirf yeah maloom ha k ham
-          baat krty han yeah nhi k kya baatyn krty han,or haan unhen jab yeah
-          maloom hua tha k ham baat krta han to woh mera papa ko batany lagy tha
-          ma na kasy roka yeah ma jaanta hun. or woh kisi ko yeah baat nhi batayn ga jis tarah ssubhaan or ali hussain na batai or na hi ma kisi ko batao ga.
-        </p>
-        <p> mera pehly din aap ko dykhna or
-          aap ka name poochna ya koi bhi mari baat buri lagi ho agar possible
-          hua to mujhy maaf kr dyna. I hope aap ko to yeah bhi nhi yaad ho ga k
-          ma na pehli dafa aap ko kab or kidher dykha or pehli dafa aap sa kab
-          baat ki.</p>
-        <p>
-          Umeed ha k yeah sab aap kisi ko nahi batao gi ma na ab apny dill ki
-          baat kr di ha.
-        </p>
-        <p>Sorry in Advance for everything if you reject it.🤍 💓 😮‍💨 😢</p>
-        <p>
-          💔 اُس نے کہا تھا کہ عشق ایک ڈھونگ ہے... میں نے کہا:\ تجھے عشق ہو، خدا
-          کرے! ❤️\ پھر کوئی تجھے اُس سے جدا کرے۔ 🥀 تو اُسے تسبیحوں میں پڑھا
-          کرے،\ تو اُسی کا نام جَپا کرے۔ 🤲❤️ تو گلی گلی پھرا کرے،\ پھر میں کہوں
-          کہ عشق ایک ڈھونگ ہے،\ اور تُو نہیں، نہیں کہا کرے۔ 🥺💔🌹
-        </p>
-        <p>
-          Agar aap ko kisi bhi kisam ki Website ya Mobile ki koi personal
-          Application banwaani ho to bata dyna wasy to ma is k kaafi heavy
-          charges lyta hun lakin aap k liya "Free of cost" kaam kru ga or sab sa
-          mushkil is tarah jasy yeah website live ki ha google sa permision la
-          kr woh bhi kr dun ga.🥀❤️✨
-        </p>
-        <p>
-          Birthday wish website,invitation website etc... or any Application.
-        </p>
-        <p>
-          Mujhy sirf App sa pyaar hua tha, Ha and Insha Allah will be
-          remaining,kisi ko pata chaly ya na chaly mujhy koi issue nhi. And I am
-          ready to Altar my life for you.
-        </p>
-        <p>Ma aap k jawaab ka intizaar kru ga kal tak.</p>
-        <p>I Love You❤️💗</p>
-        <button class="primary">Happy End, Restart</button>
+        <button class="primary" id="readHeartBtn">
+          If Reject,press it❤️💌
+        </button>
+
+        <div id="heartText" class="hidden">
+          <p>
+            Agar is website ko reject kr do to neechy wala parhana otherwise na
+            parhana!
+          </p>
+          <p>
+            Ma umeed krta hun k aap ko yeah website achi lagi ho gi or mujhy
+            yeah bhi umeed ha k kabhi kisi na kisi larki ko aaj sa pehly aysy
+            purpose nahi kya ho ga. yeah website ma na apni mehnat sa especial
+            aap k liya banai ha agar aap issay accept krna chaho to mujhay
+            dukaan pr aa k bas itna bata dyna k accept. keu k ma kaafi time sa
+            aap sa baat krna chahta tha or mera aap ki wajah sa kaafi study
+            period loss hua ha ma roz kehta tha k aaj baat kru ga lakin yeah hi
+            sochta rehta tha k kasy kru or ab mary exam bhi nazdeek aa gay han.
+            agar accept kya to woh baat bhi bata du ga.
+          </p>
+          <p>
+            or 1 advice ha yeah jo larka ha Ali Hussain jo aap ko tang krta tha
+            mujhy pehly bhi maloom tha ma na aap sa bola bhi tha k baat sun lo
+            5mint lakin aap nhi maani is sa ab jitna ho saka door raho keu k is
+            na aap k baary ma bohat gandi baat ki ha or mujhy us baat pr yaqqeen
+            bhi nhi ha keu k aap aysa nhi kr sakti.
+          </p>
+          <p>
+            OR agar reject kro to aa kr bas 1 thappar laga dyna ta k ma kabhi
+            aap sa baat na kru aisi or agar reject kro to ma aap ko mazeed nahi
+            tang kru ga bas 1 sorry wala page likha hua ha woh da dun ga. or
+            agar reject kr dya to mujhy nhi umeed k is ko parhany k baad dukaan
+            pr aao gi agar i bhi to ma aap sa just as a shopkeeper behave kru
+            ga. bas bata dyna. agar accept kr lo to ma samjhun ga mera aap k
+            liya 3 raatyn jaagna baykaar nahi gya ab yeah aap ki marzi ha accept
+            ya reject. 1500 lines of code just for you.
+          </p>
+          <p>
+            orr aap ko kisi bhi cheez ki zaroorat ho bas mujhy bata dyna chai
+            woh cheez kitni hi choti ya kitni hi bari keu na ho (intentialy or
+            finencialy). koi larka tang kra tab bhi bata dyna. aap k liya mari
+            jaan bhi haazir ha. just for you.
+          </p>
+          <p>
+            Last ma 1 advice ha! jis tarah aap subah school jaaty huy dopata or
+            mask lati ho usi tarah waapsi pr bhi lya kro or baar baar peechy na
+            dykha kro or ma yeah sab apna liya nhi keh rha balky aap ki izzat or
+            aap k papa or mama ki izzat ka hi thora sa khayaal kr lo. aap 1
+            izzatdaar ghar ki bati ho thora sa khayaal kr lo. Or ma koshish kru
+            ga k aap ki yeah pics delete kr du. But I think it,s not possible ma
+            raat ko sona sa pehla 1 dafa dykhta hun phir aap k liya dua kr k
+            sota hun or jab aap dukaan pr aati ho to mari dharkan bohat tezz ho
+            jaati ha or koi baat yaad nhi rhti jab waapis jaati ho to ma "aaytal
+            kursi" parh kr dill ma aap ko Allah k hawaly krta hun. Agar ni
+            yaqqeen to kasam la lo mujh sa. wasy ma kasam uthata nhi.
+          </p>
+          <p>
+            1 or baat jo aap k mind ma ho gi k sabzi waaly uncle ko maloom ha k
+            ham baatyn krty ha to yeah jaan lo k unhen sirf yeah maloom ha k ham
+            baat krty han yeah nhi k kya baatyn krty han,or haan unhen jab yeah
+            maloom hua tha k ham baat krta han to woh mera papa ko batany lagy
+            tha ma na kasy roka yeah ma jaanta hun. or woh kisi ko yeah baat nhi
+            batayn ga jis tarah ssubhaan or ali hussain na batai or na hi ma
+            kisi ko batao ga.
+          </p>
+          <p>
+            mera pehly din aap ko dykhna or aap ka name poochna ya koi bhi mari
+            baat buri lagi ho agar possible hua to mujhy maaf kr dyna. I hope
+            aap ko to yeah bhi nhi yaad ho ga k ma na pehli dafa aap ko kab or
+            kidher dykha or pehli dafa aap sa kab baat ki.
+          </p>
+          <p>
+            Umeed ha k yeah sab aap kisi ko nahi batao gi ma na ab apny dill ki
+            baat kr di ha.
+          </p>
+          <p>Sorry in Advance for everything if you reject it.🤍 💓 😮‍💨 😢</p>
+          <p>
+            💔 اُس نے کہا تھا کہ عشق ایک ڈھونگ ہے... میں نے کہا:\ تجھے عشق ہو،
+            خدا کرے! ❤️\ پھر کوئی تجھے اُس سے جدا کرے۔ 🥀 تو اُسے تسبیحوں میں
+            پڑھا کرے،\ تو اُسی کا نام جَپا کرے۔ 🤲❤️ تو گلی گلی پھرا کرے،\ پھر
+            میں کہوں کہ عشق ایک ڈھونگ ہے،\ اور تُو نہیں، نہیں کہا کرے۔ 🥺💔🌹
+          </p>
+          <p>
+            Agar aap ko kisi bhi kisam ki Website ya Mobile ki koi personal
+            Application banwaani ho to bata dyna wasy to ma is k kaafi heavy
+            charges lyta hun lakin aap k liya "Free of cost" kaam kru ga or sab
+            sa mushkil is tarah jasy yeah website live ki ha google sa permision
+            la kr woh bhi kr dun ga.🥀❤️✨
+          </p>
+          <p>
+            Birthday wish website,invitation website etc... or any Application.
+          </p>
+          <p>
+            Mujhy sirf App sa pyaar hua tha, Ha and Insha Allah will be
+            remaining,kisi ko pata chaly ya na chaly mujhy koi issue nhi. And I
+            am ready to Altar my life for you.
+          </p>
+          <p>Ma aap k jawaab ka intizaar kru ga kal tak.</p>
+          <p>I Love You❤️💗</p>
+        </div>
+
+        <button class="primary" id="restartBtn">Happy End, Restart 💗</button>
       </section>
     </main>
     <footer>Made with 💗, just for Rabia</footer>

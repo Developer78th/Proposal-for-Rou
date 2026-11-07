@@ -7,7 +7,24 @@ function showScreen(id) {
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+// Password Protection
+document.getElementById("passwordForm").addEventListener("submit", (e) => {
+  e.preventDefault();
 
+  const password = document.getElementById("passwordInput").value;
+  const error = document.getElementById("passwordError");
+
+  if (password === "Rabia") {
+    error.textContent = "";
+    document.getElementById("passwordInput").value = "";
+
+    flyRomanticEmojis(40);
+    showScreen("welcome");
+  } else {
+    error.textContent = "Wrong password! Try again 🥺💗";
+    document.getElementById("passwordInput").value = "";
+  }
+});
 // Flying hearts and flowers
 function flyRomanticEmojis(total = 35) {
   const emojis = ["❤️", "💕", "💖", "🌸", "🌷", "🌹", "💗", "✨", "🦋", "💞"];
@@ -189,6 +206,8 @@ next.addEventListener("click", () => {
   qi++;
   render();
 });
+// Show first quiz question when page loads
+render();
 
 // Song picker
 const songPicker = document.getElementById("songPicker");
@@ -237,16 +256,42 @@ songButtons.forEach(button => {
     });
 
 });
-// Happy End button: replay the surprise
-document.querySelector("#final .primary").addEventListener("click", () => {
+// Read My Heart Button
+document.getElementById("readHeartBtn").addEventListener("click", () => {
+
+  document.getElementById("heartText").classList.remove("hidden");
+
+  document.getElementById("readHeartBtn").classList.add("hidden");
+
   flyRomanticEmojis(60);
-  qi = 0;
-  score = 0;
-  render();
-  showScreen("welcome");
+
+  setTimeout(() => {
+    document.getElementById("heartText").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 100);
+
 });
 
-render();
+
+// Happy End - Restart Button
+document.getElementById("restartBtn").addEventListener("click", () => {
+
+  flyRomanticEmojis(60);
+
+  qi = 0;
+  score = 0;
+
+  render();
+
+  document.getElementById("heartText").classList.add("hidden");
+
+  document.getElementById("readHeartBtn").classList.remove("hidden");
+
+  showScreen("welcome");
+
+});
 /* Continuously flying hearts and flowers */
 const loveEmojis = [
   "❤️", "💕", "💖", "🌸", "🌷",

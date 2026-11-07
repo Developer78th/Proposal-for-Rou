@@ -415,3 +415,27 @@ button:active {
     background: #d93676;
     color: white;
 }
+#passwordForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+#passwordInput {
+  padding: 15px;
+  border: 2px solid #f3a6c8;
+  border-radius: 15px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  background: white;
+  color: #333;
+}
+
+#passwordInput:focus {
+  border-color: #e75480;
+  box-shadow: 0 0 10px #f3a6c8;
+}
